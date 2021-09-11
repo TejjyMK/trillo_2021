@@ -8,7 +8,7 @@
     height: 7rem
     font-size: 1.4rem
     background-color: white
-    border-bottom: 1px var(--color-grey-light-2)
+    border-bottom: 1px solid var(--color-grey-light-2)
     display: flex
     justify-content: space-between
     align-items: center
@@ -26,3 +26,72 @@
 .hotel-view
     background-color: white
     flex: 1
+
+.detail
+    display: flex
+    padding: 4.5rem
+    background-color: var(--color-grey-light-1)
+    border-bottom: 1px solid var(--color-grey-light-2)
+
+
+.description
+    flex: 0 0 60%
+    margin-right: 4.5rem
+    background-color: white
+    padding: 3rem
+    box-shadow: var(--shadow-light)
+    font-size: 1.4rem
+
+
+.user-reviews
+    flex: 1
+    background-color: yellow
+
+.paragraph:not(:last-of-type) 
+    margin-bottom: 2rem
+
+
+.list
+    list-style: none
+    margin: 3rem 0
+    border-top: 1px solid var(--color-grey-light-2)
+    border-bottom: 1px solid var(--color-grey-light-2)
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem 0
+
+    &__item
+        flex: 0 0 50%
+        margin-bottom: .7rem
+
+        &::before
+            content: ''
+            display: inline-block
+            height: 1.2rem
+            width: 1.2rem
+            margin-right: .7rem
+            background-color: var(--color-primary)
+            mask-image: url(../img/chevron-thin-right.svg)
+            mask-size: cover
+            background-image: none
+
+
+.recommend
+    font-size: 1.3rem
+    color: var(--color-grey-dark-3)
+    display: flex
+    align-items: center
+    
+
+    &__photo
+        height: 4rem
+        width: 4rem
+        border-radius: 50%
+        border: 3px solid white
+        box-sizing: content-box
+
+        &:not(:last-child)
+            margin-right: -2rem
+
+    &__count
+        margin-right: auto
